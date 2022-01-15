@@ -5,38 +5,22 @@
 body{
     background-color: #FAD9A1;
 }
-#logo{
-    position: absolute;
-    margin: 0;
-    top: 5%;
-    left: 5%;
-    margin-bottom: 15px;
-}
+header{
+    display: flex;
+    margin: 20px 80px;
 
-div.work{
-    color: #434343;
-    background-color: #F2F0EC;
-    margin-top: -410px;
-    padding: 20px 20px 20px 20px;
-    text-align: center;
-    font-size: 30px;
-}
-.background{
-    width: 50%;
-    background-image: url(../img/checkered\ paper3.png);
-    padding: 25%;
-    top: 200px;
-    background-size: 70% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-.space{
-    padding-top: 200px;
 }
 .container{
-    position: relative;
+  display: block;
+  max-width: 1120px;
+  margin: 50px auto 0 auto;
+  background-image: url(../img/checkered\ paper3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
 }
+/* https://www.w3schools.com/cssref/pr_background-position.asp */
 
 
 
@@ -49,8 +33,8 @@ div.work{
 
 /* DROPDOWN*/
 .dropbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #F2F0EC;
+    color: #434343;
     padding: 16px;
     font-size: 16px;
     border: none;
