@@ -4,6 +4,7 @@
 }
 body{
     margin: 0;
+    padding: 0;
     background-color: #FAD9A1;
 }
 .nav{
@@ -84,3 +85,19 @@ input[type=submit]:hover {
     background-color: #434343;
     transition: 0.5s;
 }
+div.footerbround{
+    background-color: #F2F0EC;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 40px;
+}
+    
+/*   I had problems with the footer, I found a solution here: https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
+The solution was:
+
+    position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   
+   background:#6cf; */ 

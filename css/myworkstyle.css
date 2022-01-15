@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    background-color: #FAD9A1;
+    font-family: 'Roboto', sans-serif;
+}
+#logo{
+    position: fixed;
+    margin: 0;
+    top: 5%;
+    left: 5%;
+}
+
+.mywork{
+    background-color: #F2F0EC;
+}
