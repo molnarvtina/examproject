@@ -39,8 +39,8 @@ input[type=text], select, textarea {
 width: 65%;
   padding: 12px;
   border: none;
-  border-radius: 20px;
   background-color: #F2F0EC;
+}
     
   /* --- scrap
     width: 60%;
@@ -48,14 +48,27 @@ width: 65%;
     border: none;
     border-radius: 10px;
 */
+
+div.contacthead{
+    background-color: #F2F0EC;
+    padding-left: 500px;
+    padding-right: 500px;
+    display: flex;
+}
+h1{
+    text-transform: uppercase;
+    color: #434343;
+    text-align: center;
 }
 div.column{
 
-  margin-top: 6px;
+  margin-top: 10px;
+}
+
 }
 
 div.bigcolumn {
-    margin-top: 6px;
+    margin-top: 10px;
 
 }
 input[type=submit] {
@@ -72,3 +85,4 @@ input[type=submit]:hover {
     color: #F2F0EC;
     background-color: #434343;
     transition: 0.5s;
+}
