@@ -16,35 +16,41 @@
         </div>
     </header> 
 
-    <section class="container">
-      <div class="space">
-      <div class="background">
-        <div class="work">
-            <h1>My work</h1>
+    <section class="container"> 
+      <div class="title">
+        <h1>My work</h1>
         </div>
-      </div>
+        <div class="links">
+          <div class="dropdown link">
+            <span>School Projects</span>
+            <div class="dropdown-content">
+                <a href="#" class="link">Andromeda Enlightened Birth</a>
+                <a href="#" class="link">"How To" Video</a>
+                <a href="#" class="link">Contemporary Dance Studio</a>
+                <a href="#" class="link">Orchil</a>
+                <a href="#" class="link">Bolygge</a>
+            </div>
+        </div>
+
+        <a href="#" class="link">Photography</a>
     </div>
-    </section>
+    <div class="contact">
+        <a href="#">Contact</a>
+    </div>
+</section>
 
-<!-- dropdown menu --> 
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">School Projects</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Andromeda Andromeda Enlightened Birth</a>
-          <a href="#">"How To" Video</a>
-          <a href="#">Contemporary Dance Studio</a>
-          <a href="#">Orchil</a>
-          <a href="#">Bolygge</a>
-        </div>
-      </div> 
+<footer>
+  <p>Copyright © 2022 Valentina Molnar. All rights reserved</p>
+</footer>
 
+<!-- First I wanted to use this but theN I found a CSS dropdown option and decided to use that one instead
+SOURCE IS GOING TO BE IN CSS
 
+FIRST SOLUTION :
 
-
-
-    <!-- <div class="dropdown">
+<div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
+    <div id="myDropdown" class="dropdown-content">
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
@@ -73,25 +79,6 @@ window.onclick = function(event) {
 }
 </script>
 
-SOURCE : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
-    -->
-    <script>
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+SOURCE : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown -->
 </body>
 </html>

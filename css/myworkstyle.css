@@ -29,7 +29,7 @@ header{
   background-color: #F2F0EC;
   padding: 40px 80px;
   display: inline-block;
-  margin: -50px auto auto 0 auto;
+  margin: -50px auto 0 auto;
 }
 /* margin: x y*/
 
@@ -92,8 +92,24 @@ https://www.w3schools.com/css/css_dropdowns.asp
   background-color: #F2F0EC;
   display: inline-block;
   padding: 20px 25px;
-  
 }
+
+.contact a{
+  text-decoration: none;
+  color: #434343;
+  font-size: 36px
+}
+
+footer{
+  margin-top: 35px;
+  background-color: #F2F0EC;
+  padding: 8px;
+}
+
+footer p{
+  font-size: 18px;
+}
+
 
 
 /* DROPDOWN SCRAP - WAS GOING TO USE AND ALTER THIS
