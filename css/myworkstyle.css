@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap');
 *{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     background-color: #FAD9A1;
+    color: #434343;
 }
 header{
     display: flex;
+  
     margin: 20px 80px;
 
 }
 .container{
   display: block;
   max-width: 1120px;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 0 auto; /*adding 50 px here because it will be minus in .container title*/
   background-image: url(../img/checkered\ paper3.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,16 +25,69 @@ header{
 }
 /* https://www.w3schools.com/cssref/pr_background-position.asp */
 
+.container .title{
+  background-color: #F2F0EC;
+  padding: 40px 80px;
+  display: inline-block;
+  margin: -50px auto auto 0 auto;
+}
+/* margin: x y*/
+
+.container h1{
+  font-size: 56px;
+}
+
+.container .links{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 150px 80px;
+}
+
+.container .links .link{
+  display: block;
+  padding: 20px 25px;
+  background-color: #F2F0EC;
+  font-size: 48px;
+  color: #434343;
+  text-decoration: none;
+  height: fit-content;
+  margin-bottom: 32px;
+}
+ /*source for dropdown:
+
+https://www.w3schools.com/css/css_dropdowns.asp
+ */
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #F2F0EC;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-content .link{
+  font-size: 24px;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid #434343;
+
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
 
 
-
-
-
-
-
-
-
-/* DROPDOWN*/
+/* DROPDOWN SCRAP - WAS GOING TO USE AND ALTER THIS
 .dropbtn {
     background-color: #F2F0EC;
     color: #434343;
@@ -68,7 +124,4 @@ header{
     text-decoration: none;
     display: block;
   }
-  
-  .dropdown a:hover {background-color: #ddd;}
-  
-  .show {display: block;}
+  */
