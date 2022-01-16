@@ -13,6 +13,7 @@ header{
     padding: 20px 80px;
     justify-content: space-between;
     align-items: center;
+    font-weight: 500;
 }
 /* Nav */
 .nav{
@@ -37,21 +38,16 @@ ul li a:hover{
 
 /*nav end*/
 
-div .container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
 
 /* FORM */ 
 form{
-    padding-top: 130px;
-    padding-left: 25%;
+    padding-top: 80px;
+    width: 60%;
+    margin: 0 auto; /*ez csak akkor működik ha van width*/
 }
 input[type=text], select, textarea {
 
-width: 65%;
+width: 100%;
   padding: 12px;
   border: none;
   background-color: #F2F0EC;
@@ -65,8 +61,10 @@ width: 65%;
 */
 
 div.title{
+    width: 200px;
+    min-width: 120px;
     background-color: #F2F0EC;
-    padding: 40px 80px;
+    padding: 20px 40px;
     margin: 0 auto;
 }
 h1{
@@ -86,11 +84,11 @@ div.bigcolumn {
 input[type=submit] {
     background-color: #F2F0EC;
     color: #434343;
-    margin-top: 20px;
     padding: 15px 25px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 input[type=submit]:hover {
@@ -108,4 +106,16 @@ footer{
 
 footer p{
     font-size: 18px;
+    text-align: center;
+    margin: 0;
+    
+}
+
+@media screen and (max-width: 600px) {
+    ul li a{
+        font-size: 30px;
+    }
+    header{
+        padding: 10px 20px;
+    }
 }

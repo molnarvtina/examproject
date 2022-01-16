@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #434343;
 }
 body{
     margin: 0;
     background-color: #FAD9A1;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
 }
 .nav{
     display: flex;
@@ -21,13 +30,80 @@ ul li a{
     font-size: 50px;
 
 }
-div.relative{
-    margin-top: 70px;
-    position: relative;
+ul li a:hover{
+    color: #F2F0EC;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    margin: 0 70px;
+    /*justify-content: space-between;*/
+
+}
+.polaroid{
+    background-color: #F2F0EC;
+    padding: 30px 30px 40px 30px;
+    height: min-content;
+    flex: 1 1 300px;
+}
+.polaroid img{
+    width: 100%;
+   /* max-width: 390px; */
+    
+}
+.polaroid p{
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 40px;
+    text-align: center;
+
+}
+.introduction{
+    background-image: url(../img/checkered\ paper\ small.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex: 1 1 400px; /*min width helyett*/
+    min-height: 550px;
+    padding: 30px;
+    margin-top: 100px;
+}
+.aboutme{
+    background-color: #F2F0EC;
+    padding: 25px;
+    height: min-content;
+    position: relative; /*azért hogy a child hozzá képest mozogjon*/
+    flex: 1 1 300px;
+}
+.sun{
+    max-width: 100px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.linkmywork{
+    text-decoration:underline;
+    color: #434343;
+}
+footer{
+    margin-top: 35px;
+    background-color: #F2F0EC;
+    padding: 5px;
+}
+
+footer p{
+    font-size: 18px;
+    margin: 0;
     text-align: center;
 }
-div.absolute{
-    position: absolute;
-    top: px;
-    left: 50px;
+@media screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    header{
+        padding: 10px 20px;
+    }
+
 }
