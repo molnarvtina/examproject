@@ -89,7 +89,7 @@ section{
 
 .product{
     width: min-content;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 .images{
@@ -104,8 +104,19 @@ section{
     width: 300px;
     height: 300px;
     object-fit: cover;
-   /* border: solid 5px;
-    border-color: #F2F0EC; */
+}
+.imagestwo{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: min-content;
+    margin: 0 auto;
+}
+
+.imagestwo img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 footer{
@@ -127,6 +138,10 @@ footer p{
        /* margin: 0 20px; --- no need for*/
     }
     .images{
+        flex-direction: column;
+    }
+
+    .imagestwo{
         flex-direction: column;
     }
     
