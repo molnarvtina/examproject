@@ -74,8 +74,9 @@ https://www.w3schools.com/css/css_dropdowns.asp
   z-index: 1;
 }
 
+
 .dropdown-content .link{
-  font-size: 24px;
+  font-size: 15px; /*for some reason I can't change the font size*/
   padding: 15px 0;
   text-align: center;
   border-top: 1px solid #434343;

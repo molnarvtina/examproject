@@ -64,21 +64,39 @@ ul li a:hover{
     background-image: url(../img/checkered\ paper\ small.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    flex: 1 1 400px; /*min width helyett*/
+    flex: 1 1 400px; /*min width helyett --- using this instead of min-width */
     min-height: 550px;
     padding: 30px;
     margin-top: 100px;
+}
+.introduction h2{
+    font-size: 64px;
+    margin-bottom: 70px;
+
+}
+.introduction p{
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 64px;
+    margin: -5px;
+}
+
+.introduction .cta{
+    font-size: 34px;
+    line-height: 62px;
+    margin-top: 62px;
 }
 .aboutme{
     background-color: #F2F0EC;
     padding: 25px;
     height: min-content;
-    position: relative; /*azért hogy a child hozzá képest mozogjon*/
-    flex: 1 1 300px;
+    position: relative; /*azért hogy a child hozzá képest mozogjon - I put this here so the childe of this attribute will move - see under*/
+    flex: 1 1 300px;  /* flex basis, flex grow, flex shrink*/
+    font-size: 21px;
 }
 .sun{
     max-width: 100px;
-    position: absolute;
+    position: absolute; /*child*/
     top: 10px;
     right: 10px;
 }
