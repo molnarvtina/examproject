@@ -104,8 +104,13 @@ section{
     width: 300px;
     height: 300px;
     object-fit: cover;
+    opacity: 0.7;
    /* border: solid 5px;
     border-color: #F2F0EC; */
+}
+.images img:hover{
+    opacity: 1;
+    transition: 0.5s;
 }
 
 footer{
@@ -132,6 +137,18 @@ footer p{
     
     header{
         padding: 10px 20px;
+    }
+    .background{
+        background-image: none;
+
+    }
+    .title div div{
+        margin-top: 100px;
+        padding: 5px;
+        bottom: 0;
+    }
+    .container{
+        padding: 15px 15px;
     }
 
 }
